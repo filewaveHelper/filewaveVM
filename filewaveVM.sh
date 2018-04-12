@@ -11,7 +11,7 @@
 #       1. sudo visudo                                                                                                                                                              #
 # 	    2. change this line from: `%admin ALL=(ALL) ALL` to:    ``%admin ALL=(ALL) NOPASSWD: ALL`                                                                                   #
 # 7. change the variable for your vm                                                                                                                                                #
-# 8. for automation use sample crontab                                                                                                                                                #
+# 8. for automation use sample crontab                                                                                                                                              #
 #####################################################################################################################################################################################
 
 
