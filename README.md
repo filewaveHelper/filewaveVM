@@ -5,7 +5,7 @@
 4. activate remote connection on guest system
 5. start the vm manually and excute: `ssh-copy-id -p 3022 USERNAME@localhost`
 6. activate nopasswd sudo on guest
-      1. sudo visudo
-	    2. change this line from: `%admin ALL=(ALL) ALL` to:    ``%admin ALL=(ALL) NOPASSWD: ALL`
+      1. `sudo visudo`
+	  2. change this line from: `%admin ALL=(ALL) ALL` to:    ``%admin ALL=(ALL) NOPASSWD: ALL`
 7. change the variable for your vm
 8. for automation use sample crontab

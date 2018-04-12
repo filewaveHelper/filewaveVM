@@ -23,6 +23,7 @@ serialNumber="SERIAL_NUMBER"
 
 copyLogs="true"
 logfolder="/Users/XXX/private/filewave/logs/filewave"
+
 VBoxManage="/usr/local/bin/VBoxManage"
 
 ## variables end
