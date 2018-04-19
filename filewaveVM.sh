@@ -44,7 +44,7 @@ $VBoxManage controlvm $vm poweroff soft >/dev/null 2>&1
 
 $VBoxManage modifyvm $vm --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
 $VBoxManage modifyvm  $vm --natpf1 "ssh,tcp,,3022,,22" >/dev/null 2>&1
-$VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" $productLong
+$VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "$productLong"
 $VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Mac-F2238BAE"
 $VBoxManage setextradata $vm "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
 $VBoxManage setextradata $vm "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
@@ -52,7 +52,7 @@ $VBoxManage setextradata $vm "VBoxInternal2/EfiGopMode" 5
 $VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" "W8#######1A"
 $VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiBoardSerial" "W8#########1A"
 $VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiSystemVendor" "Apple Inc."
-$VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiSystemFamily" $productShort
+$VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiSystemFamily" "$productShort"
 $VBoxManage setextradata $vm "VBoxInternal/Devices/efi/0/Config/DmiBIOSVersion" "IM112.0057.03B"
 $VBoxManage modifyvm $vm --cpu-profile "Intel Core i7-3960X"
 $VBoxManage setextradata $vm VBoxInternal/Devices/efi/0/Config/DmiSystemSerial $serialNumber
